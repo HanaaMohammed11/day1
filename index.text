@@ -1,2 +1,16 @@
 Hanaa mohammed ali 
 hanaamohammed840@gmail.com
+
+///////////////////////////////////////////////
+git checkout -b feature-branch
+# Make your changes and commit them
+git push origin feature-branch
+git checkout main
+git pull origin main
+git merge feature-branch
+git push origin main
+git tag -a v1.0.0 -m "Release version 1.0.0"
+git push origin v1.0.0
+git tag
+ssh-keygen -t rsa -b 4096 -C "hanaamohammed840@gmail.com"
+git status
