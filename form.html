@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+         
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        padding: 0;
+        box-sizing: border-box;
+            margin: 0;
+        }
+        form {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        
+        }
+        h1 {
+            margin-top:-20%;
+            margin-right: 25%;
+            display: block;
+            margin-bottom: 10%;
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio input {
+            margin-right: 10px;
+        }
+        .radio label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+       
+        .checkboxes input {
+            margin-right: 10px;
+        }
+        .h1{
+    border-radius: 60%;
+    padding: 20px 25px 20px 25px;
+     margin-top: 10%;
+       display: inline-block;
+            text-align: center;
+            color: #333;
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <form>
+ <h1 class="h1">1</h1><h1>Your Basic Info</h1>
+
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="text" id="password">
+        </div>
+        <div>
+            <label>Age:</label>
+            <div class="radio">
+                <input type="radio" value="under16" name="Age" id="under16" required>
+                <label for="under16">Under 13</label><br>
+                <input type="radio" value="16 or older" name="Age" id="16orolder" required>
+                <label for="16orolder">Over 13</label>
+            </div>
+        </div>
+        <div>
+            <h1 class="h1">2</h1><h1>Your profile</h1>
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="Biography" maxlength="100" minlength="10" required></textarea>
+        </div>
+        <div>
+            <label for="courses">Job Role:</label>
+            <select name="Courses" id="courses">
+                <option value="front-end">Front-end</option>
+                <option value="motion graphic">Motion Graphic</option>
+                <option value="social media marketing">Social Media Marketing</option>
+            </select>
+        </div>
+        <div class="checkboxes">
+            <label>Interests</label>
+        
+            <input type="checkbox"    <label for="development">Development</label><br>
+           
+        
+            <input type="checkbox"<label for="design">Design</label><br>
+            <input type="checkbox"<label for="business">Business</label><br><br><br>
+
+        </div>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
